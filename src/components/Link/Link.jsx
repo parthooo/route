@@ -1,9 +1,9 @@
 const Link = ({route}) => {
 
     const { name, path} = route;
+    
     return (
-        <li>
-            
+        <li className="mr-12">
             <a href={path}>{name}</a>
         </li>
     );
