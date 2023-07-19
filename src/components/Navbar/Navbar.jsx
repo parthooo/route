@@ -15,7 +15,7 @@ const Navbar = () => {
     ];
 
     return (
-        <nav>
+        <nav className='bg-purple-600'>
             <div onClick={() => setOpen(!open)} className='md:hidden'>
                 {
                 open === true ? 
@@ -24,8 +24,7 @@ const Navbar = () => {
                 <Bars3Icon className="h-6 w-6 text-purple-500" />
                 }
             </div>
-
-            <ul className={`md:flex ${open ? 'top-6' : '-top-96'}`}>
+            <ul className={`md:flex absolute duration-300 bg-purple-600 pl-8 pb-4 ${open ? 'top-6' : '-top-96'}`}>
                 {
                     routes.map(route => <Link
                         key={route.id}
