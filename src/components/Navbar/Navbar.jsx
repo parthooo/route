@@ -19,12 +19,12 @@ const Navbar = () => {
             <div onClick={() => setOpen(!open)} className='md:hidden'>
                 {
                 open === true ? 
-                <XMarkIcon className="h-6 w-6 text-purple-500" /> 
+                <XMarkIcon className="h-6 w-6 text-white" /> 
                 : 
-                <Bars3Icon className="h-6 w-6 text-purple-500" />
+                <Bars3Icon className="h-6 w-6 text-white" />
                 }
             </div>
-            <ul className={`md:flex absolute duration-300 bg-purple-600 pl-8 pb-4 ${open ? 'top-6' : '-top-96'}`}>
+            <ul className={`md:flex absolute md:static duration-300 bg-purple-600 pl-8 pb-4 ${open ? 'left-0' : '-left-96'}`}>
                 {
                     routes.map(route => <Link
                         key={route.id}
