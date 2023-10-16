@@ -3,11 +3,11 @@ import { CheckCircleIcon } from '@heroicons/react/24/solid'
 
 const Feature = ({ feature }) => {
     return (
-        <div className='flex '>
+        <div className='flex'>
             <span>
                 <CheckCircleIcon className="h-6 w-6 text-blue-500" />
             </span>
-            <span>
+            <span className='pl-2'>
                 {feature}
             </span>
         </div>
